@@ -1,10 +1,10 @@
 # Interpretable-Meteorological-OOD
-clone the directiory
+Clone the directiory with git clone git@github.com:sumandasntu/Interpretable-Meteorological-OOD.git
 
-Rename your Data Set to 'Total'
+Change Directory with cd Interpretable-Meteorological-OOD
 
-Run the data split script to separate test and train data
+Put all the images data in a single folder. Then run the scripts for Data Splitting and Agugmentation
 
-Run the rain generation and lightness generation script for rain and lightness agumention
+Then run the scripts of Train and Test Codes
 
 
