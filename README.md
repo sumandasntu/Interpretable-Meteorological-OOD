@@ -1,5 +1,5 @@
 # Interpretable-Meteorological-OOD
-Clone the directiory with git clone (git@github.com:sumandasntu/Interpretable-Meteorological-OOD.git)
+Clone the directiory with git clone git@github.com:sumandasntu/Interpretable-Meteorological-OOD.git
 
 Change Directory with cd Interpretable-Meteorological-OOD
 
