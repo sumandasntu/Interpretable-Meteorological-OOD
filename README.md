@@ -12,7 +12,7 @@ Run the script *python Data_splitting.py --path (Path of parent folder of the da
 Augment the training and test data with different level of rain and lightness with the following command. 
 Run the script *python Data_augmentation.py --path (path of the parent folder containing Train and test data, e.g., /home/Data_set_for_WVAE/CARLA) --percentage (percentage of labelled data e.g., 25)* from the folder Data Splitting and Augmentation.
 
-***You can skip the above steps of Data-splitting and Data-agumentation with the following pre-augmented datasets.*** 
+***You can skip the above two steps of Data-splitting and Data-agumentation with the following pre-augmented datasets.*** 
 ## Download the pre-augmentated data
 ### CARLA
 You can download pre-augmentated CARLA images from [here]( ).
