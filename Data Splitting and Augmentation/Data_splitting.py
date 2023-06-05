@@ -113,3 +113,23 @@ for i in range(len(list3)):
     file_list = os.listdir(src_dir)
     file_list = os.listdir(dst_dir)
 shutil.rmtree(args.path+'/'+list[1]+'/')
+##AUROC folder
+os.mkdir(args.path+'/'+'AUROC_Rain')
+os.mkdir(args.path+'/'+'AUROC_Lightness')
+os.mkdir(args.path+'/'+'AUROC_Rain'+'/'+'ID')
+os.mkdir(args.path+'/'+'AUROC_Rain'+'/'+'OOD')
+os.mkdir(args.path+'/'+'AUROC_Lightness'+'/'+'ID')
+os.mkdir(args.path+'/'+'AUROC_Lightness'+'/'+'OOD')
+L2 = sorted(os.listdir(path+'/'+'Test_Lightness'))
+L3=sorted(os.listdir(path+'/'+'Test_Rain'))
+for i in range(11):
+    if i<=5:
+        shutil.move(path+'/'+'Test_Rain'+'/'+L3[i], path+'/'+'AUROC_Rain'+'/'+'ID'+'/')
+    else:
+        shutil.move(path+'/'+'Test_Rain'+'/'+L3[i], path+'/'+'AUROC_Rain'+'/'+'OOD'+'/')
+        
+for i in range(21):
+    if i<=4 or i>=16:
+        shutil.move(path+'/'+'Test_Lightness'+'/'+L2[i], path+'/'+'AUROC_Lightness'+'/'+'OOD'+'/')
+    else:
+        shutil.move(path+'/'+'Test_Lightness'+'/'+L2[i], path+'/'+'AUROC_Lightness'+'/'+'ID'+'/') 
