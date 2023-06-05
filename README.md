@@ -5,7 +5,6 @@ Change Directory with cd Interpretable-Meteorological-OOD
 ## Preparation of Customize Dataset
 Put all the images data in a single folder. Then run the scripts for data-splitting and data-agugmentation (rain and lightness). 
 ### Data splitting
-/mnt/7fad4474-58d9-48d4-a565-db321fc0cca5/Suman/WVAE_data/Duckie
 Suppose your data folder is named as *image_data* with path */home/Data_set_for_WVAE/CARLA/image_data*. 
 Run the script *python Data_splitting.py --path (Path of parent folder of the dataset, e.g., /home/Data_set_for_WVAE/CARLA) --data (provide the name of the folder containing the images, e.g., image_data)* from the folder Data Splitting and Augmentation.
 ### Data augmentation
