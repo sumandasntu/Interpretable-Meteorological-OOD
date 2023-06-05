@@ -16,7 +16,7 @@ This will return a trained WVAE model with weight *weight_CARLA.pt*.
 For calculating the thesholds of in-distribution and out-of-distribution, run the script *python get_theshold.py --input (name of the training folder used in the training) --weight (weight obtained from training e.g., weights_CARLA.pt) --percentage (percentage of labelled data e.g., 25)* from folder Train and Test Codes
 This will return three thesholds for rain, low-lightness and high-lightness respectively. Also, a CSV file will be saved containing these values.
 ## Testing 
-For test, run the script *python WVAE_test.py --test_data (name of the testing folder containing ID and OOD sub-folders, e.g. AUROC_Rain) --test_type (rain or lightness) --weight weight obtained from training e.g., weights_CARLA.pt) --theshold (CSV file containing theshold values, e.g., thesholds_weights_CARLA.csv) *
+For test, run the script *python WVAE_test.py --test_data (name of the testing folder containing ID and OOD sub-folders, e.g. AUROC_Rain) --test_type (rain or lightness) --weight weight obtained from training e.g., weights_CARLA.pt) --theshold (CSV file containing theshold values, e.g., thesholds_weights_CARLA.csv)*
 
 ## Testing with pre-trained weights
 ### CARLA
