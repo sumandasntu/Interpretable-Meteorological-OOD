@@ -14,9 +14,9 @@ Run the script *python Data_augmentation.py --path (path of the parent folder co
 ***You can skip the above two steps of Data-splitting and Data-agumentation with the following pre-augmented datasets.*** 
 ## Download the pre-augmentated data
 ### CARLA
-You can download pre-augmentated CARLA images from [here]( ).
+You can download pre-augmentated CARLA images from [here](https://entuedu-my.sharepoint.com/:f:/g/personal/suman_das_staff_main_ntu_edu_sg/EpU390IN5cdEq9Wt4QJ1OS0B4gknABtDpWh3319oJqVDhg?e=l6c0mt).
 ### Duckie
-You can download pre-augmentated Duckie images from [here]( ).
+You can download pre-augmentated Duckie images from [here](https://entuedu-my.sharepoint.com/:f:/g/personal/suman_das_staff_main_ntu_edu_sg/EgvdpXyxgotNjmAr2Vw5XIABSj3Kr_mQf5r_ko-1r-G3TQ?e=yPdee0).
 ## Training
 For training, run the script *python WVAE_train.py --input  --weig python WVAE_train.py --input (name of the training folder) --weight (e.g., weight_CARLA)* from folder Train and Test Codes.
 This will return a trained WVAE model with weight *weight_CARLA.pt*.
