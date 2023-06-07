@@ -1,7 +1,7 @@
 # Interpretable-Meteorological-OOD
 Clone the directiory with *git clone git@github.com:sumandasntu/Interpretable-Meteorological-OOD.git*
 
-Change Directory with cd Interpretable-Meteorological-OOD
+Change Directory with *cd Interpretable-Meteorological-OOD*
 ## Preparation of Customize Dataset
 Put all the images data in a single folder. Then run the scripts for data-splitting and data-agugmentation (rain and lightness). 
 ### Data splitting 
