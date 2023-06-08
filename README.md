@@ -31,6 +31,6 @@ For test, run the script *python WVAE_test.py --test_data (name of the testing f
 ### CARLA
 You can download pre-trained weights for CARLA images from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EVfJq4sMu1RCvw4dspf0efwB8uz0sGxdJa79yL9Gm6_Z4Q?e=D3KzFr).
 ### Duckie
-You can download pre-trained weights for Duckie images from [here]( ).
+You can download pre-trained weights for Duckie images from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EWGa-L38_tlLmJy9zijwHtMBLMKS_mHz8MKTkww-BIaygA?e=mxzvjD).
 
 
