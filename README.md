@@ -3,7 +3,7 @@ Clone the directiory with *git clone git@github.com:sumandasntu/Interpretable-Me
 
 Change Directory with *cd Interpretable-Meteorological-OOD*
 ## Preparation of Customize Dataset
-Put all the image data in a single folder. Then run the scripts for data-splitting and data-augmentation (rain and lightness). 
+Put all the image data in a single folder. Then run the scripts for data-splitting and data augmentation (rain-I and lightness). 
 ### Data splitting 
 Run the script *python Data_splitting.py --path (Path of the image dataset e.g.,/home/Data_set_for_WVAE/CARLA/image_data)* from the folder Data Splitting and Augmentation.
 ### Data augmentation
@@ -29,8 +29,8 @@ For the test, run the script *python WVAE_test.py --test_data (name of the testi
 
 ## Testing with Pre-trained Weights
 ### CARLA
-You can download pre-trained weights for CARLA images from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EVfJq4sMu1RCvw4dspf0efwB8uz0sGxdJa79yL9Gm6_Z4Q?e=D3KzFr).
+You can download pre-trained weights for CARLA dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EVfJq4sMu1RCvw4dspf0efwB8uz0sGxdJa79yL9Gm6_Z4Q?e=D3KzFr) and for CARLA dataset with rain-II from [here]().
 ### Duckie
-You can download pre-trained weights for Duckie images from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EWGa-L38_tlLmJy9zijwHtMBLMKS_mHz8MKTkww-BIaygA?e=mxzvjD).
+You can download pre-trained weights for the Duckie dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EWGa-L38_tlLmJy9zijwHtMBLMKS_mHz8MKTkww-BIaygA?e=mxzvjD) and for the Duckie dataset with rain-II from [here]().
 
 
