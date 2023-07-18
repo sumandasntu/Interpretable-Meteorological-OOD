@@ -101,19 +101,42 @@ def get_AUROC_rain(folder: str, rain_th: float) -> np.ndarray:
     auc_score = roc_auc_score(y, y_score1)
     print('F1 =%f, Precision=%f and AUROC=%f for heavy rain' %(F1, Precision, auc_score))
 
+def get_AUROC_mixed(folder: str, dark_th: float, light_th: float, rain_th: float) -> np.ndarray:
+    Auroc_dataloader = DataLoader(Test_dataset, batch_size=len(Test_dataset), shuffle=False)	
+    auroc_features, auroc_labels = next(iter(Auroc_dataloader))
+    y = label_binarize(auroc_labels, classes=[0, 1])
+    n_classes = y.shape[1]
+    testLatent1=torch.zeros([len(Test_dataset), 3])
+    for i in range(len(Test_dataset)):
+    	image, label=Test_dataset[i]
+    	image=image.reshape([1, 3, d, d])
+    	with torch.no_grad():
+        	image = image.to(device)
+        	vae.encoder.to(device)
+        	latent_mu, latent_var, _, _, _,_ = vae.encoder(image)
+        	latent_mu = latent_mu.cpu()
+        	testLatent1[i, 1]=label
+        	testLatent1[i, 0]=latent_mu[0, 1]
+        	testLatent1[i, 2]=latent_mu[0, 0]
+    y_score1=torch.zeros(len(Test_dataset))
+    y_pred1=torch.zeros(len(Test_dataset))
+    for i in range(len(Test_dataset)):
+        y_score1[i]=testLatent1[i, 0]
+        if testLatent1[i, 0]<= rain_th and testLatent1[i, 2]>=dark_th and testLatent1[i, 2]<=light_th:
+            y_pred1[i]=0
+        else:
+            y_pred1[i]=1
+    F1=f1_score(y, y_pred1)
+    Precision=precision_score(y, y_pred1)
+    #auc_score = roc_auc_score(y, y_score1)
+    print('F1 =%f and Precision=%f  for mixed features' %(F1, Precision))
 
-
-
-
-#t_rain=10
-#t_dark=-25
-#t_light=25
-      
+   
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Provide a Testing Data folder and a WAVE weight file')
-    parser.add_argument('--test_data', default='AUROC', type=str, help='Input folder name only with out  qoute symbol ')
-    parser.add_argument('--test_type', type=str, help='Test is for lightness or rain ')
+    parser.add_argument('--test_data', default='AUROC', type=str, help='Input folder name')
+    parser.add_argument('--test_type', type=str, help='Test is for lightness or rain, or mixed ')
     parser.add_argument('--weight', default='weights.pt', type=str, help='Weight from training')
     parser.add_argument('--theshold',  type=str, help='a  csv file name with value of theshold')
     args = parser.parse_args()
@@ -136,9 +159,10 @@ if args.test_type=="lightness":
    get_AUROC_lightness(Test_dataset, t_dark, t_light)
 elif args.test_type=="rain":
    get_AUROC_rain(Test_dataset, t_rain)
+elif args.test_type=="mixed":
+   get_AUROC_mixed(Test_dataset, t_dark, t_light, t_rain)
 else:
    print('Please choose either --test_type as lightness or rain') 
-
 
 
 
