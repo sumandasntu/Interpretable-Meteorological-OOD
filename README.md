@@ -29,8 +29,8 @@ For the test, run the script *python WVAE_test.py --test_data (name of the testi
 
 ## Testing with Pre-trained Weights
 ### CARLA
-You can download pre-trained weights for CARLA dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EVfJq4sMu1RCvw4dspf0efwB8uz0sGxdJa79yL9Gm6_Z4Q?e=D3KzFr) and for CARLA dataset with rain-II from [here]().
+You can download pre-trained weights for CARLA dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EVfJq4sMu1RCvw4dspf0efwB8uz0sGxdJa79yL9Gm6_Z4Q?e=K5iWXy) and for CARLA dataset with rain-II from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EdBTMwZJqNJPv7VmLv7SntcB-TgFHZCM_2WZYz2Ipt3klg?e=RlZSQY).
 ### Duckie
-You can download pre-trained weights for the Duckie dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EWGa-L38_tlLmJy9zijwHtMBLMKS_mHz8MKTkww-BIaygA?e=mxzvjD) and for the Duckie dataset with rain-II from [here]().
+You can download pre-trained weights for the Duckie dataset with rain-I from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/ERVYpv03W7FOjaN9TTAbqBwB4glBfuCE-LUHCe0i36L2Dw?e=tJOJha) and for the Duckie dataset with rain-II from [here](https://entuedu-my.sharepoint.com/:u:/g/personal/suman_das_staff_main_ntu_edu_sg/EUR5GUPCHERAnm0AbuSe_MwBm69E3QXFZGxvZycygrGQMg?e=Fjtzir).
 
 
