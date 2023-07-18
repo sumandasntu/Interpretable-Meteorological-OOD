@@ -7,8 +7,8 @@ Put all the image data in a single folder. Then run the scripts for data-splitti
 ### Data splitting 
 Run the script *python Data_splitting.py --path (Path of the image dataset e.g.,/home/Data_set_for_WVAE/CARLA/image_data)* from the folder Data Splitting and Augmentation.
 ### Data augmentation
-Augment the training and test data with different levels of rain and lightness with the following command. 
-Run the script *python Data_augmentation.py --path (path of the parent folder containing Train and test data, e.g., /home/Data_set_for_WVAE/CARLA) --percentage (percentage of labelled data e.g., 25)* from the folder Data Splitting and Augmentation.
+Augment the training and test data with different levels of rain-I(or rain-II) and lightness with the following command. 
+Run the script *python Data_augmentation_I.py/Data_augmentation_II.py --path (path of the parent folder containing Train and test data, e.g., /home/Data_set_for_WVAE/CARLA) --percentage (percentage of labelled data e.g., 25)* from the folder Data Splitting and Augmentation.
 
 ***You can skip the above two steps of Data-splitting and Data-argumentation with the following pre-augmented datasets.*** 
 ## Download the pre-augmented data
